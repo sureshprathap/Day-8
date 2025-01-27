@@ -1,0 +1,33 @@
+Main.java
+
+1) Connection to db
+2) Insert Data to table
+
+3) Read Data from table
+4) Update Data to table
+5) Delete Data to table
+6) Main()
+	*Connection String (ConnectionDb.java)
+		
+
+	* Insert (InsertEmployee.java)
+
+	* Read (ReadEmployee.java)
+	* Update(ReadEmployee.java)
+	* Delete(RemoveEmployee.java)
+
+ConnectionDb.java with out Main
+	url:
+	user:
+	pass
+
+ReadEmployee.java
+	ReadEmployee()
+
+Main.java
+	
+	conn()
+	readEmployee()
+
+syed open c
+	

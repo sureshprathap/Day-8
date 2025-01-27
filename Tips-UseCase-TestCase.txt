@@ -1,0 +1,21 @@
+DEVELOPER
+USE CASE SCENARIO
+Module with that of the individual coding
+
+TESTER
+TEST CASE SCENARIO
+
+
+Test Case 1: Scenario
+Not included the db mysql connector
+1.java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/TESTDB
+Test Case 1.1: Scenario
+Unknown port or wrong port number in url connection
+Caused by: java.net.ConnectException: Connection refused: connect
+
+Test Case 2: Scenario
+Written  is not the mysql connector
+2. java.sql.SQLSyntaxErrorException: Unknown database 'testdb'Test Case 1: Scenario
+Test Case 3: Scenario
+Written db available mysql but attribute or db table column unknown
+3.java.sql.SQLException: Column 'age' not found.

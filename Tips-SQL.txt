@@ -1,0 +1,43 @@
+DEVELOPER
+HR MANAGEMENT SYSTEM
+CLASS DESIGN based on the individual module
+DB STRUCTURE IN RESPECTIVE DB IN MYSQL
+
+
+EMPLOYEE TABLE
+DEPARTMENT TABLE
+ATTENDANCE TABLE
+AND so on...
+
+USE CASE SCENARIO
+
+CREATION OF DB STRUCTURE
+--------------------------
+CREATE TABLE `employees` (
+  `id` int(15) NOT NULL,
+  `name` varchar(60) NOT NULL,
+  `department` varchar(40) NOT NULL,
+  `location` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `employees`
+--
+
+INSERT INTO `employees` (`id`, `name`, `department`, `location`) VALUES
+(1, 'Sanjay', 'CSE', 'China'),
+(5, 'shankar', 'Java', 'chennai');
+
+CHANGELOG FOR SQL SCRIPT
+-----------------------------
+INSERT COLUMN IN TABLE STRUCTURE
+1) Sql query for inserting column of a table
+ALTER TABLE `employees` ADD `age` INT(15) NOT NULL AFTER `name`;
+2) SQL query to change column property(datatype from INT to SMALLINT)
+ALTER TABLE `employees` CHANGE `age` `age` SMALLINT(3) NOT NULL;
+3) INSERT QUERY
+INSERT INTO `employees` (`id`, `name`, `age`, `department`, `location`) VALUES ('2', 'GEORGE', '28', 'Accounts', 'Kerala');
+
+DB SQL ERROR
+1062: DUPLICATE ENTRY '1' FOR key 'PRIMARY'
+
